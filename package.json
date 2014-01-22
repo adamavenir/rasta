@@ -1,0 +1,33 @@
+{
+  "name": "rasta",
+  "version": "0.0.1",
+  "main": "lib/rasta",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adambrault/rasta.git"
+  },
+  "description": "Team roster from markdown folder",
+  "dependencies": {
+    "bucker": "~0.8.0",
+    "marked": "~0.3.0",
+    "sugar": "~1.4.1",
+    "underscore": "~1.5.2",
+    "walk": "~2.2.1",
+    "wtchr": "0.0.1",
+    "yamljs": "~0.1.4",
+    "jsonfile": "~1.1.1"
+  },
+  "keywords": [
+    "bios",
+    "markdown"
+  ],
+  "author": {
+    "name": "Adam Brault",
+    "url": "http://adambrault.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "homepage": "https://github.com/adambrault/rasta"
+}
