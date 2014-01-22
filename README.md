@@ -17,7 +17,7 @@ var Rasta = require('rasta');
 
 var app = express();
 
-var bioDir = ('./bios')
+var bioDir = ('bios')
 
 var rasta = new Rasta(app, bioDir);
 
