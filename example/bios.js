@@ -9,7 +9,7 @@ app.configure(function () {
     app.use(express.bodyParser());
 });
 
-var bioDir = ('bios');
+var bioDir = ('team');
 
 var rasta = new Rasta(app, bioDir);
 
