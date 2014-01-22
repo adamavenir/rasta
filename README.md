@@ -10,6 +10,8 @@ Uses simple markdown + yaml text files.
 ```
 npm install rasta
 ```
+
+```
 var express = require('express');
 var Rasta = require('rasta');
 

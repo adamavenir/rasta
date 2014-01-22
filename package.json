@@ -21,13 +21,20 @@
     "bios",
     "markdown"
   ],
-  "author": {
-    "name": "Adam Brault",
-    "url": "http://adambrault.com"
-  },
+  "author": "Adam Brault (http://adambrault.com)",
   "license": "MIT",
   "engines": {
     "node": "0.10.x"
   },
-  "homepage": "https://github.com/adambrault/rasta"
+  "homepage": "https://github.com/adambrault/rasta",
+  "bugs": {
+    "url": "https://github.com/adambrault/rasta/issues"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
