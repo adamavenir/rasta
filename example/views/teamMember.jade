@@ -1,13 +1,13 @@
 doctype html
 head
-  title= name
+  title= person.name
   meta(charset="utf-8")
 
 body
   article
-    img(src=image)
-    h1= name
-    h2= title
-    .postContent!= content
+    img(src= person.image)
+    h1= person.name
+    h2= person.title
+    .postContent!= bio
 
   include roster

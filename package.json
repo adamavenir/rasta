@@ -1,39 +1,34 @@
 {
   "name": "rasta",
-  "version": "0.0.2",
-  "main": "lib/rasta",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:adambrault/rasta.git"
+  "description": "Multiple pages with metadata from a folder of markdown files",
+  "version": "0.1.2",
+  "author": "Adam Brault (http://adambrault.com)",
+  "bugs": {
+    "url": "https://github.com/adambrault/rasta/issues"
   },
-  "description": "Team roster from markdown folder",
   "dependencies": {
-    "bucker": "~0.8.0",
-    "marked": "~0.3.0",
+    "meta-marked": "~0.2.1",
     "sugar": "~1.4.1",
     "underscore": "~1.5.2",
-    "walk": "~2.2.1",
-    "wtchr": "0.0.1",
-    "yamljs": "~0.1.4",
-    "jsonfile": "~1.1.1"
+    "walk": "~2.3.1"
   },
-  "keywords": [
-    "bios",
-    "markdown"
-  ],
-  "author": "Adam Brault (http://adambrault.com)",
-  "license": "MIT",
+  "devDependencies": {},
+  "directories": {
+    "example": "example"
+  },
   "engines": {
     "node": "0.10.x"
   },
   "homepage": "https://github.com/adambrault/rasta",
-  "bugs": {
-    "url": "https://github.com/adambrault/rasta/issues"
+  "keywords": [
+    "markdown"
+  ],
+  "license": "MIT",
+  "main": "rasta",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adambrault/rasta.git"
   },
-  "directories": {
-    "example": "example"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
