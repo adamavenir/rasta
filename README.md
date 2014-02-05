@@ -1,9 +1,11 @@
 rasta
 =====
 
-Generate a team roster from a provided folder of markdown files and images.
+Give ``rasta`` a folder of markdown files with yaml headers and you'll get back markdown with accompanying metadeta. 
 
-Uses simple markdown + yaml text files.
+Uses [meta-marked](https://github.com/j201/meta-marked).
+
+(Originally, I intended to make this module generate a team roster and individual bio pages. Hence the name.)
 
 ### Add the module to your site
 
@@ -11,27 +13,14 @@ Uses simple markdown + yaml text files.
 npm install rasta
 ```
 
-```
-var express = require('express');
-var Rasta = require('rasta');
 
-var app = express();
+## Use files like  markdown + yaml:
 
-var bioDir = ('bios')
+Just include a simple section of yaml at the header of each bio, fenced in with three dashes above and three dots below. 
 
-var rasta = new Rasta(app, bioDir);
+Whatever associated content you'd like associated with that metadata goes below that.
 
-app.listen(3000);
-
-console.log("port 3000's so rasta, man")
-
-```
-
-Check out the [example](https://github.com/adambrault/rasta/tree/master/example) for some simple default templates.
-
-## Adding your bios:
-
-Just include a simple section of yaml at the header of each bio, fenced in with three dashes and using these keys:
+Like so:
 
 ```
 ---
@@ -39,7 +28,33 @@ name: Andrew Ryan
 title: Chief Bio Officer
 slug: andy
 image: /images/andy.png
----
+...
+
+Here's my cool content!
 ```
 
-Double-check that your image uris and paths are properly configured.
+### Then you can do some stuff like this:
+
+```
+var Rasta = require('rasta');
+
+var rasta = new Rasta(__dirname + '/team');
+
+var allTheThings = rasta.all();
+
+console.log(allTheThings);
+
+var justOneOfTheThings = rasta.getBySlug('some-url-slug');
+
+console.log(justOneOfTheThings);
+
+```
+
+### Maybe you'd like an example?
+Then check out the [example](https://github.com/adambrault/rasta/tree/master/example)!
+
+
+### That's it!
+And that's it! *Now you're cooking with rasta!*
+
+(I don't think that's a thing though.)
