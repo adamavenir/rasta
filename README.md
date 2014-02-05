@@ -13,8 +13,7 @@ Uses [meta-marked](https://github.com/j201/meta-marked).
 npm install rasta
 ```
 
-
-## Use files like  markdown + yaml:
+### Use files like  markdown + yaml:
 
 Just include a simple section of yaml at the header of each bio, fenced in with three dashes above and three dots below. 
 
