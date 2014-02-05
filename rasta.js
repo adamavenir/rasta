@@ -32,7 +32,6 @@ Rasta.prototype.addDirectory = function (dir, callback) {
 
   walker.on('file', function (dir, file, next) {
     if (file.name.endsWith('.md')) {
-      console.log('got file', file.name);
       self.addFile(dir + '/' + file.name, next);
     }
     else { 

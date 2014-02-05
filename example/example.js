@@ -21,7 +21,6 @@ app.get('/team', function (req, res) {
 app.get('/team/:slug', function (req, res) {
   var item = rasta.getBySlug(req.params.slug);
   var all = rasta.all();
-  console.log('item', item);
   if (item) {
     res.render('teamMember', { person : item.meta, bio : item.html, all : all });
   } else {
