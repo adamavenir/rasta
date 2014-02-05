@@ -1,7 +1,7 @@
 rasta
 =====
 
-Give ``rasta`` a folder of markdown files with yaml headers and you'll get back markdown with accompanying metadeta. 
+Give ``rasta`` a folder of markdown files with yaml headers and you'll get back markdown with some metadata.
 
 Uses [meta-marked](https://github.com/j201/meta-marked).
 
