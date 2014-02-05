@@ -1,11 +1,7 @@
 rasta
 =====
 
-Give ``rasta`` a folder of markdown files with yaml headers and you'll get back markdown with some metadata.
-
-Uses [meta-marked](https://github.com/j201/meta-marked).
-
-(Originally, I intended to make this module generate a team roster and individual bio pages. Hence the name.)
+Give ``rasta`` a folder of markdown files with yaml headers and you'll get back markdown with some metadata, thanks to [meta-marked](https://github.com/j201/meta-marked).
 
 ### Add the module to your site
 
