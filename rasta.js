@@ -17,13 +17,12 @@ function Rasta (dir) {
 
 Rasta.prototype.addFile = function (path, callback) {
   var dataSet = this._dataSet;
-  
+
   fs.readFile(path, 'utf8', function (err, data) {
     var itemData = marked(data);
     dataSet.push(itemData);
-  })
-
-  callback();
+    callback(err);
+  });
 }
 
 Rasta.prototype.addDirectory = function (dir, callback) {
