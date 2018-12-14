@@ -1,7 +1,7 @@
 {
   "name": "rasta",
   "description": "Multiple pages with metadata from a folder of markdown files",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Adam Brault (http://adambrault.com)",
   "bugs": {
     "url": "https://github.com/adambrault/rasta/issues"
